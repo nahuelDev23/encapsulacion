@@ -17,8 +17,8 @@ func main() {
 	},
 	)
 
-  Go.SetName("POO CON GO")
-  fmt.Println(Go.Name())
+	Go.SetName("POO CON GO")
+	fmt.Println(Go.Name())
 
 	Go.PrintClasses()
 }
