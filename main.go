@@ -1,23 +1,22 @@
 
 package main
 
-import (
-  "github.com/nahueldev23/encapsulacion/course"
-)
+import ("github.com/nahuelDev23/encapsulacion/course" 
+"fmt")
 
 func main(){
-  Go := Course{
-    Name:"Go desde cero",
-    Price:12.34,
-    IsFree:false,
-    UserIDs:[]uint{12,13,14,15},
-    Classes: map[uint]string{
+  Go := course.NewCourse("GO DESDE CERO",0,false)
+
+  Go.UserIDs=[]uint{12,13,14,15}
+  Go.Classes= map[uint]string{
       1:"Introduccion",
       2:"Estructuras",
       3:"Mapas",
-    },
+    }
+
+  fmt.Printf("%+v",Go)
+
   }
 
- Go.PrintClasses()
+ // Go.PrintClasses()
 
-}
